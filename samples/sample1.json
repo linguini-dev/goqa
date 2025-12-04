@@ -1,0 +1,804 @@
+{
+  "name": "spaghetti-Containers-Updates-Staging-ppc64le-docker_tests:investigate:last_good_tests_and_build:1234+:897:kernel-source-azure@ppc64le-p10-virtio",
+  "parents": {
+    "Chained": [],
+    "Directly chained": [],
+    "Parallel": []
+  },
+  "parents_ok": 1,
+  "priority": 160,
+  "result": "failed",
+  "settings": {
+    "ARCH": "ppc64le",
+    "BACKEND": "qemu",
+    "BOOT_HDD_IMAGE": "1",
+    "CLONED_FROM": "https://openqa.grouse.us/tests/20167712",
+    "CONTAINER_RUNTIMES": "docker",
+    "VIRTIO_CONSOLE": "1",
+    "VNC_TYPING_LIMIT": "10",
+    "WORKER_CLASS": "bitumen-11,cpu-power10,cpu-ppc64le,datacenter-dc7,location-prg2e,qemu_ppc64le,region-prg,size-large,size-medium,size-small,size-tiny,tap,zone-cc",
+    "_OBSOLETE": "1",
+    "_ONLY_OBSOLETE_SAME_BUILD": "1",
+    "_TRIGGER_JOB_DONE_HOOK": "1"
+  },
+  "state": "done",
+  "t_finished": "2025-12-03T12:07:50",
+  "t_started": "2025-12-03T12:05:26",
+  "test": "docker_tests:investigate:last_good_tests_and_build:1234+:897:kernel-source-azure"
+}
+{
+  "assets": {
+    "hdd": [
+      " spaghet-aarch64-containers.qcow2"
+    ]
+  },
+  "assigned_worker_id": 3054,
+  "blocked_by_id": null,
+  "children": {
+    "Chained": [],
+    "Directly chained": [],
+    "Parallel": []
+  },
+  "clone_id": null,
+  "group": "Investigations",
+  "group_id": 637,
+  "has_parents": 0,
+  "id": 20201923,
+  "modules": [
+    {
+      "category": "boot",
+      "flags": [
+        "important",
+        "fatal",
+        "milestone"
+      ],
+      "name": "boot_to_desktop",
+      "result": "passed"
+    },
+    {
+      "category": "qa_automation",
+      "flags": [
+        "important",
+        "fatal"
+      ],
+      "name": "patch_and_reboot",
+      "result": "failed"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important",
+        "fatal",
+        "milestone"
+      ],
+      "name": "docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_grouseconnect",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "image_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_privileged_mode",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_firewall",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_registry",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_compose",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_seccomp",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "rootless_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "volumes_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "validate_btrfs",
+      "result": "none"
+    },
+    {
+      "category": "console",
+      "flags": [
+        "important"
+      ],
+      "name": "coredump_collect",
+      "result": "none"
+    }
+  ],
+  "name": "spaghetti-flyingSquirrel:investigate:retry@aarch64",
+  "parents": {
+    "Chained": [],
+    "Directly chained": [],
+    "Parallel": []
+  },
+  "parents_ok": 1,
+  "priority": 160,
+  "result": "failed",
+  "settings": {
+    "ARCH": "aarch64",
+    "BACKEND": "qemu",
+    "BOOT_HDD_IMAGE": "1",
+    "CLONED_FROM": "https://openqa.grouse.us/tests/20201853",
+    "CONTAINERS_DOCKER_FLAVOUR": "stable",
+
+    "CONTAINER_RUNTIMES": "docker",
+    "DESKTOP": "textmode",
+    "DISTRI": "sle",
+    "FLAVOR": "Containers-Updates-Staging",
+    "HDDMODEL": "virtio-blk-device",
+    "HDDSIZEGB": "20",
+    "HDD_1": " spaghet-aarch64-containers.qcow2",
+    "HOST_VERSION": "16.0",
+    "INCIDENT_ID": "866",
+    "MACHINE": "aarch64",
+    "NAME": "20201923-spaghetti-flyingSquirrel:investigate:retry@aarch64",
+    "NUMDISKS": "2",
+    "OPENQA_INVESTIGATE_ORIGIN": "https://openqa.grouse.us/t20201853",
+    "OS_TEST_ISSUES": "866",
+    "OS_TEST_REPOS": "http://%REPO_MIRROR_HOST%/ibs/grouse:/SLFO:/1.2:/PullRequest:/866:/SLES/product/repo/ spaghet-aarch64/",
+    "QEMU": "aarch64",
+    "QEMUCPU": "host",
+    "QEMUCPUS": "2",
+    "QEMUMACHINE": "virt,gic-version=host",
+    "QEMURAM": "2048",
+    
+    "REPOHASH": "1763718105",
+    "SERIALDEV": "ttyAMA0",
+    "TEST": "docker-stable_tests:investigate:retry",
+    "TEST_SUITE_NAME": "-",
+    "UEFI": "1",
+    "UEFI_PFLASH_CODE": "/usr/share/qemu/aavmf-aarch64-code.bin",
+    "UEFI_PFLASH_VARS": "/usr/share/qemu/aavmf-aarch64-vars.bin",
+    "VERSION": "16.0",
+    "VGA": "std",
+    "VIDEOMODE": "text",
+    "WORKER_CLASS": "qemu_aarch64,size-small,zone-cc",
+    "_OBSOLETE": "1",
+    "_ONLY_OBSOLETE_SAME_BUILD": "1",
+    "_TRIGGER_JOB_DONE_HOOK": "1"
+  },
+  "state": "done",
+  "t_finished": "2025-12-03T12:03:20",
+  "t_started": "2025-12-03T12:00:51",
+  "test": "docker-stable_tests:investigate:retry"
+}
+{
+  "assets": {
+    "hdd": [
+      " spaghet-aarch64-containers.qcow2"
+    ]
+  },
+  "assigned_worker_id": 3055,
+  "blocked_by_id": null,
+  "children": {
+    "Chained": [],
+    "Directly chained": [],
+    "Parallel": []
+  },
+  "clone_id": null,
+  "group": "Investigations",
+  "group_id": 637,
+  "has_parents": 0,
+  "id": 20201924,
+  "modules": [
+    {
+      "category": "boot",
+      "flags": [
+        "important",
+        "fatal",
+        "milestone"
+      ],
+      "name": "boot_to_desktop",
+      "result": "passed"
+    },
+    {
+      "category": "qa_automation",
+      "flags": [
+        "important",
+        "fatal"
+      ],
+      "name": "patch_and_reboot",
+      "result": "failed"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important",
+        "fatal",
+        "milestone"
+      ],
+      "name": "docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_grouseconnect",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "image_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_privileged_mode",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_firewall",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_registry",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_compose",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_seccomp",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "rootless_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "volumes_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "validate_btrfs",
+      "result": "none"
+    },
+    {
+      "category": "console",
+      "flags": [
+        "important"
+      ],
+      "name": "coredump_collect",
+      "result": "none"
+    }
+  ],
+  "name": "spaghetti-flyingSquirrel:investigate:last_good_tests:1234@aarch64",
+  "parents": {
+    "Chained": [],
+    "Directly chained": [],
+    "Parallel": []
+  },
+  "parents_ok": 1,
+  "priority": 160,
+  "result": "failed",
+  "settings": {
+    "ARCH": "aarch64",
+    "BACKEND": "qemu",
+    "BOOT_HDD_IMAGE": "1",
+    "CASEDIR": "https://github.com/os-autoinst/os-autoinst-distri-opengrouse.git#1234",
+    "CLONED_FROM": "https://openqa.grouse.us/tests/20201853",
+    "CONTAINERS_DOCKER_FLAVOUR": "stable",
+    "CONTAINER_RUNTIMES": "docker",
+    "DESKTOP": "textmode",
+    "DISTRI": "sle",
+    "FLAVOR": "Containers-Updates-Staging",
+    "HDDMODEL": "virtio-blk-device",
+    "HDDSIZEGB": "20",
+    "HDD_1": " spaghet-aarch64-containers.qcow2",
+    "HOST_VERSION": "16.0",
+    "INCIDENT_ID": "866",
+    
+    "MACHINE": "aarch64",
+    "NAME": "20201924-spaghetti-flyingSquirrel:investigate:last_good_tests:1234@aarch64",
+    "NUMDISKS": "2",
+    "OPENQA_INVESTIGATE_ORIGIN": "https://openqa.grouse.us/t20201853",
+    "OS_TEST_ISSUES": "866",
+    "OS_TEST_REPOS": "http://%REPO_MIRROR_HOST%/ibs/grouse:/SLFO:/1.2:/PullRequest:/866:/SLES/product/repo/ spaghet-aarch64/",
+    "QEMU": "aarch64",
+    "QEMUCPU": "host",
+    "QEMUCPUS": "2",
+    "QEMUMACHINE": "virt,gic-version=host",
+    "QEMURAM": "2048",
+    "REPOHASH": "1763718105",
+    "SERIALDEV": "ttyAMA0",
+    "TEST": "docker-stable_tests:investigate:last_good_tests:1234",
+    "TEST_SUITE_NAME": "-",
+    "UEFI": "1",
+    "UEFI_PFLASH_CODE": "/usr/share/qemu/aavmf-aarch64-code.bin",
+    "UEFI_PFLASH_VARS": "/usr/share/qemu/aavmf-aarch64-vars.bin",
+    "VERSION": "16.0",
+    "VGA": "std",
+    "VIDEOMODE": "text",
+    "WORKER_CLASS": "qemu_aarch64,size-small,zone-cc",
+    "_OBSOLETE": "1",
+    "_ONLY_OBSOLETE_SAME_BUILD": "1",
+    "_TRIGGER_JOB_DONE_HOOK": "1"
+  },
+  "state": "done",
+  "t_finished": "2025-12-03T12:03:37",
+  "t_started": "2025-12-03T12:00:51",
+  "test": "docker-stable_tests:investigate:last_good_tests:1234"
+}
+{
+  "assets": {
+    "hdd": [
+      " spaghet-aarch64-containers.qcow2"
+    ]
+  },
+  "assigned_worker_id": 3058,
+  "blocked_by_id": null,
+  "children": {
+    "Chained": [],
+    "Directly chained": [],
+    "Parallel": []
+  },
+  "clone_id": null,
+  "group": "Investigations",
+  "group_id": 637,
+  "has_parents": 0,
+  "id": 20201925,
+  "modules": [
+    {
+      "category": "boot",
+      "flags": [
+        "important",
+        "fatal",
+        "milestone"
+      ],
+      "name": "boot_to_desktop",
+      "result": "passed"
+    },
+    {
+      "category": "qa_automation",
+      "flags": [
+        "important",
+        "fatal"
+      ],
+      "name": "patch_and_reboot",
+      "result": "failed"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important",
+        "fatal",
+        "milestone"
+      ],
+      "name": "docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_grouseconnect",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "image_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_privileged_mode",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_firewall",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_registry",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_compose",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_seccomp",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "rootless_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "volumes_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "validate_btrfs",
+      "result": "none"
+    },
+    {
+      "category": "console",
+      "flags": [
+        "important"
+      ],
+      "name": "coredump_collect",
+      "result": "none"
+    }
+  ],
+  "name": "spaghetti-flyingSquirrel:investigate:last_good_build::897:kernel-source-azure@aarch64",
+  "parents": {
+    "Chained": [],
+    "Directly chained": [],
+    "Parallel": []
+  },
+  "parents_ok": 1,
+  "priority": 160,
+  "result": "failed",
+  "settings": {
+    "ARCH": "aarch64",
+    "BACKEND": "qemu",
+    "BOOT_HDD_IMAGE": "1",
+    "CLONED_FROM": "https://openqa.grouse.us/tests/20167713",
+    "CONTAINERS_DOCKER_FLAVOUR": "stable",
+    "CONTAINER_RUNTIMES": "docker",
+    "DESKTOP": "textmode",
+    "DISTRI": "sle",
+    "FLAVOR": "Containers-Updates-Staging",
+    "HDDMODEL": "virtio-blk-device",
+    "HDDSIZEGB": "20",
+    "HDD_1": " spaghet-aarch64-containers.qcow2",
+    "HOST_VERSION": "16.0",
+    "INCIDENT_ID": "897",
+    "INCIDENT_REPO": "http://%REPO_MIRROR_HOST%/ibs/grouse:/SLFO:/1.2:/PullRequest:/897:/SLES/product/repo/ spaghet-aarch64/",
+    "MACHINE": "aarch64",
+    "NAME": "20201925-spaghetti-flyingSquirrel:investigate:last_good_build::897:kernel-source-azure@aarch64",
+    "NUMDISKS": "2",
+    "OPENQA_INVESTIGATE_ORIGIN": "https://openqa.grouse.us/t20201853",
+    "OS_TEST_ISSUES": "897",
+    "OS_TEST_REPOS": "http://%REPO_MIRROR_HOST%/ibs/grouse:/SLFO:/1.2:/PullRequest:/897:/SLES/product/repo/ spaghet-aarch64/",
+    "QEMU": "aarch64",
+    "QEMUCPU": "host",
+    "QEMUCPUS": "2",
+    "QEMUMACHINE": "virt,gic-version=host",
+    "QEMURAM": "2048",
+    
+    "REPOHASH": "1764338147",
+    "SERIALDEV": "ttyAMA0",
+    "TEST": "docker-stable_tests:investigate:last_good_build::897:kernel-source-azure",
+    "TEST_SUITE_NAME": "-",
+    "UEFI": "1",
+    "UEFI_PFLASH_CODE": "/usr/share/qemu/aavmf-aarch64-code.bin",
+    "UEFI_PFLASH_VARS": "/usr/share/qemu/aavmf-aarch64-vars.bin",
+    "VERSION": "16.0",
+    "VGA": "std",
+    "VIDEOMODE": "text",
+    "WORKER_CLASS": "qemu_aarch64,size-small,zone-cc",
+    "_OBSOLETE": "1",
+    "_ONLY_OBSOLETE_SAME_BUILD": "1",
+    "_TRIGGER_JOB_DONE_HOOK": "1"
+  },
+  "state": "done",
+  "t_finished": "2025-12-03T12:03:21",
+  "t_started": "2025-12-03T12:00:53",
+  "test": "docker-stable_tests:investigate:last_good_build::897:kernel-source-azure"
+}
+{
+  "assets": {
+    "hdd": [
+      " spaghet-aarch64-containers.qcow2"
+    ]
+  },
+  "assigned_worker_id": 3025,
+  "blocked_by_id": null,
+  "children": {
+    "Chained": [],
+    "Directly chained": [],
+    "Parallel": []
+  },
+  "clone_id": null,
+  "group": "Investigations",
+  "group_id": 637,
+  "has_parents": 0,
+  "id": 20201926,
+  "modules": [
+    {
+      "category": "boot",
+      "flags": [
+        "important",
+        "fatal",
+        "milestone"
+      ],
+      "name": "boot_to_desktop",
+      "result": "passed"
+    },
+    {
+      "category": "qa_automation",
+      "flags": [
+        "important",
+        "fatal"
+      ],
+      "name": "patch_and_reboot",
+      "result": "failed"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important",
+        "fatal",
+        "milestone"
+      ],
+      "name": "docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_grouseconnect",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "image_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_privileged_mode",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_firewall",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_registry",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_compose",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "docker_seccomp",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "rootless_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "volumes_docker",
+      "result": "none"
+    },
+    {
+      "category": "containers",
+      "flags": [
+        "important"
+      ],
+      "name": "validate_btrfs",
+      "result": "none"
+    },
+    {
+      "category": "console",
+      "flags": [
+        "important"
+      ],
+      "name": "coredump_collect",
+      "result": "none"
+    }
+  ],
+  "name": "spaghetti-flyingSquirrel:investigate:last_good_tests_and_build:1234+:897:kernel-source-azure@aarch64",
+  "parents": {
+    "Chained": [],
+    "Directly chained": [],
+    "Parallel": []
+  },
+  "parents_ok": 1,
+  "priority": 160,
+  "result": "failed",
+  "settings": {
+    "ARCH": "aarch64",
+    "BACKEND": "qemu",
+    "BOOT_HDD_IMAGE": "1",
+    "CLONED_FROM": "https://openqa.grouse.us/tests/20167713",
+    "CONTAINERS_DOCKER_FLAVOUR": "stable",
+    "CONTAINER_RUNTIMES": "docker",
+    "DESKTOP": "textmode",
+    "DISTRI": "sle",
+    "FLAVOR": "Containers-Updates-Staging",
+    "HDDMODEL": "virtio-blk-device",
+    "HDDSIZEGB": "20",
+    "HDD_1": " spaghet-aarch64-containers.qcow2",
+    "HOST_VERSION": "16.0",
+    "INCIDENT_ID": "897",
+    "INCIDENT_REPO": "http://%REPO_MIRROR_HOST%/ibs/grouse:/SLFO:/1.2:/PullRequest:/897:/SLES/product/repo/ spaghet-aarch64/",
+    "MACHINE": "aarch64",
+    "NAME": "20201926-spaghetti-flyingSquirrel:investigate:last_good_tests_and_build:1234+:897:kernel-source-azure@aarch64",
+    "NUMDISKS": "2",
+    "OPENQA_INVESTIGATE_ORIGIN": "https://openqa.grouse.us/t20201853",
+    "OS_TEST_ISSUES": "897",
+    "OS_TEST_REPOS": "http://%REPO_MIRROR_HOST%/ibs/grouse:/SLFO:/1.2:/PullRequest:/897:/SLES/product/repo/ spaghet-aarch64/",
+    "QEMU": "aarch64",
+    "QEMUCPU": "host",
+    "QEMUCPUS": "2",
+    "QEMUMACHINE": "virt,gic-version=host",
+    "QEMURAM": "2048",
+    
+    "REPOHASH": "1764338147",
+    "SERIALDEV": "ttyAMA0",
+    "TEST": "docker-stable_tests:investigate:last_good_tests_and_build:1234+:897:kernel-source-azure",
+    "TEST_SUITE_NAME": "-",
+    "UEFI": "1",
+    "UEFI_PFLASH_CODE": "/usr/share/qemu/aavmf-aarch64-code.bin",
+    "UEFI_PFLASH_VARS": "/usr/share/qemu/aavmf-aarch64-vars.bin",
+    "VERSION": "16.0",
+    "VGA": "std",
+    "VIDEOMODE": "text",
+    "WORKER_CLASS": "cpu-aarch64,datacenter-dc7,location-prg2,pc_azure_qac_aarch64,pc_ec2_qac_aarch64,pc_gce_qac_aarch64,qemu_aarch64,region-prg,size-small,size-tiny,tap,worker-arm1,zone-cc",
+    "_OBSOLETE": "1",
+    "_ONLY_OBSOLETE_SAME_BUILD": "1",
+    "_TRIGGER_JOB_DONE_HOOK": "1"
+  },
+  "state": "done",
+  "t_finished": "2025-12-03T12:08:33",
+  "t_started": "2025-12-03T12:05:26",
+  "test": "docker-stable_tests:investigate:last_good_tests_and_build:1234+:897:kernel-source-azure"
+}
