@@ -1,0 +1,50 @@
+[
+  {
+    "all_passed": 0,
+    "build": ":41820:dtb-armv7l",
+    "commented": 0,
+    "comments": 0,
+    "date": "2025-11-28T15:07:07",
+    "distris": {
+      "sle": 1
+    },
+    "escaped_build": "_41820_dtb_armv7l",
+    "escaped_id": "Carrotte-_41820_dtb_armv7l",
+    "escaped_version": "Carrotte",
+    "failed": 55,
+    "key": "Carrotte-:41820:dtb-armv7l",
+    "labeled": 0,
+    "passed": 43,
+    "reviewed": 0,
+    "skipped": 0,
+    "softfailed": 29,
+    "total": 127,
+    "unfinished": 0,
+    "version": "Carrotte",
+    "version_count": 1
+  },
+  {
+    "all_passed": 0,
+    "build": ":41692:systemd",
+    "commented": 1,
+    "comments": 4,
+    "date": "2025-11-20T12:16:55",
+    "distris": {
+      "sle": 1
+    },
+    "escaped_build": "_41692_systemd",
+    "escaped_id": "Carrotte-_41692_systemd",
+    "escaped_version": "Carrotte",
+    "failed": 4,
+    "key": "Carrotte-:41692:systemd",
+    "labeled": 4,
+    "passed": 73,
+    "reviewed": 1,
+    "skipped": 0,
+    "softfailed": 32,
+    "total": 109,
+    "unfinished": 0,
+    "version": "Carrotte",
+    "version_count": 2
+  }
+]
