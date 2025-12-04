@@ -40,10 +40,19 @@ def build_arg_parser():
     Parses commandline arguments at runtime. The arguments are things like a Job's `id`, `group_id` and etc. other arguments by which a Job can be identified.
     """
     parser = argparse.ArgumentParser(description="OpenQA Vibes")
-    parser.add_argument("--group-id", type=int, help="Filter by group ID")
-    parser.add_argument("--status", type=str, help="Filter by status")
-    parser.add_argument("--name", type=str, help="Filter by name")
-    parser.add_argument("--since", type=str, help="Filter by time (e.g., '1d', '37h')")
+    subparsers = parser.add_subparsers(dest="command", required=True)
+
+    # Get jobs command
+    get_jobs_parser = subparsers.add_parser("get-jobs", help="Get jobs")
+    get_jobs_parser.add_argument("--group-id", type=int, help="Filter by group ID")
+    get_jobs_parser.add_argument("--status", type=str, help="Filter by status")
+    get_jobs_parser.add_argument("--name", type=str, help="Filter by name")
+    get_jobs_parser.add_argument("--since", type=str, help="Filter by time (e.g., '1d', '37h')")
+
+    # Get builds command
+    get_builds_parser = subparsers.add_parser("get-builds", help="Get builds")
+    get_builds_parser.add_argument("--group-id", type=int, required=True, help="Filter by group ID")
+
     return parser.parse_args()
 
 
@@ -234,20 +243,20 @@ def main():
     client = APIClient(base_url="https://openqa.grouse.us")
     renderer = Renderer(console)
 
-    if args.group_id:
+    if args.command == "get-jobs":
+        job_collection = JobCollection(client)
+        since = parse_since(args.since) if args.since else None
+        job_collection.fetch(
+            group_id=args.group_id,
+            status=args.status,
+            name=args.name,
+            since=since,
+        )
+        renderer.render_jobs(job_collection.jobs)
+    elif args.command == "get-builds":
         build_collection = BuildCollection(client)
         build_collection.fetch(args.group_id)
         renderer.render_builds(build_collection.builds)
-
-    job_collection = JobCollection(client)
-    since = parse_since(args.since) if args.since else None
-    job_collection.fetch(
-        group_id=args.group_id,
-        status=args.status,
-        name=args.name,
-        since=since,
-    )
-    renderer.render_jobs(job_collection.jobs)
 
 
 if __name__ == "__main__":
